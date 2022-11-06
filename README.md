@@ -1,17 +1,41 @@
-# Expense-Tracker
-Track your expenses and save money!
-## Requiremnets:
- > 1.[MySQL](https://www.mysql.com/downloads/)
- > 2.[Python](https://www.python.org/downloads/)
-## Usage
-Run the `newtracker.py` , before that change the password in the `line 26` to your `MySQL password`
-## Features
-- Get an overview of your expenses in a tabular format
-- Get an overview of your expenses of `a day` in a tabular format
-- Get an overview of your expenses of `a month` in pie chart
-- Track your income and spendings with `Income vs Expense graph`
-- And a lastly a loan calculator, it calculates:-
-  - number of monthly payments
-  - annuity monthly payment amount which is fixed during the whole loan term
-  - loan principal  
- 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rdbende/Sun-Valley-ttk-theme/master/assets/hero_dark.png">
+  <img alt="Cover image" src="https://raw.githubusercontent.com/rdbende/Sun-Valley-ttk-theme/master/assets/hero_light.png">
+</picture>
+
+## Installation [![image](https://static.pepy.tech/badge/sv-ttk)](https://pypi.org/project/sv-ttk)
+The theme is easily installable as a Python package
+
+```
+pip install sv-ttk
+```
+
+
+### Usage
+For detailed documentation, see the [wiki page](https://github.com/rdbende/Sun-Valley-ttk-theme/wiki/sv_ttk-docs)
+
+```python
+import tkinter
+from tkinter import ttk
+
+import sv_ttk
+
+root = tk.Tk()
+
+button = ttk.Button(root, text="Click me!")
+button.pack()
+
+# This where the magic happens
+sv_ttk.set_theme("dark")
+
+root.mainloop()
+```
+
+
+## Known bugs and limitations
+- Tkinter (Tk) isn't really good at displaying `png` images, so the window can be quite laggy when resizing, especially on Windows.
+
+## What's next?
+Check out my other ttk themes!
+- [Azure ttk theme](https://github.com/rdbende/Azure-ttk-theme)
+- [Forest ttk theme](https://github.com/rdbende/Forest-ttk-theme)
