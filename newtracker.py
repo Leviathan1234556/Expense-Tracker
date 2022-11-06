@@ -23,7 +23,7 @@ from tkinter import ttk, PhotoImage, messagebox
 import datetime
 from dateutil.relativedelta import relativedelta
 import sv_ttk
-mycon = m.connect(host = "localhost",user = "root",passwd = "1605")
+mycon = m.connect(host = "localhost",user = "root",passwd = "Modern@2021")
 mycur = mycon.cursor()
 mycur.execute('create database if not exists expense_tracker;')
 mycur.execute('use expense_tracker;')
