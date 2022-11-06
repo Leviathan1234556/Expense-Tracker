@@ -7,7 +7,7 @@ Track your expense and save money!
 Run the `newtracker.py` , but before that change the password in `line 26` to your `MySQL password`
 ## Features
 - Get an overview of your expenses in tabular form
-- Get an overview of your expenses `for a day' in tabular form
+- Get an overview of your expenses `for a day` in tabular form
 - Get an overview of your expenses `for a month` in pie chart
 - Get an insight of your income and spendings with `Income vs Expense graph`
 - And lastly Loan calculator. It calculates:-
