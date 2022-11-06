@@ -11,6 +11,6 @@ Run the `newtracker.py` , but before that change the password in `line 26` to yo
 - Get an overview of your expenses `for a month` in pie chart
 - Get an insight of your income and spendings with `Income vs Expense graph`
 - And lastly Loan calculator. It calculates:-
- - number of monthly payments
- - annuity monthly payment amount which is fixed during the whole loan term
- - loan principal
+  - number of monthly payments
+  - annuity monthly payment amount which is fixed during the whole loan term
+  - loan principal
