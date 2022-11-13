@@ -4,7 +4,7 @@ Track your expense and save money!
 * [MySQL](https://www.mysql.com/downloads/)
 * [Python](https://www.python.org/downloads/)
 ## Usage
-Run the `newtracker.py` , but before that change the password in `line 26` to your `MySQL password`
+Run the `newtracker.exe`
 ## Features
 - Get an overview of your expenses in tabular form
 - Get an overview of your expenses `for a day` in tabular form
