@@ -1,6 +1,10 @@
 import csv
 import os
-import mysql.connector as m
+try:
+    import mysql.connector as m
+except ImportError:
+    os.system('pip install mysql-connector-python')
+    import mysql.connector as m
 try:
     from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
     from matplotlib.figure import Figure 
@@ -29,7 +33,11 @@ from tkinter import ttk, PhotoImage, messagebox, Canvas
 import datetime
 from dateutil.relativedelta import relativedelta
 import tkinter.font as font
-import sv_ttk
+try:
+    import sv_ttk
+except ImportError:
+    os.system('pip install sv-ttk')
+    import sv_ttk
 new =tk.CTk()
 new.title('Expense Tracker')
 new.state('zoomed')
@@ -848,10 +856,8 @@ def tracker():
               bg_color="#262626",  compound="right", text_font=newfont)
     tipbutton.place(x=10,y=10)
 submit = tk.CTkButton(master=new, text='Submit', command=tracker,
-            text_color="white",
-              hover= True,
-              width = 175, corner_radius=5,
-              border_width=2,fg_color=None, hover_color="#D35B58",border_color="#D35B58",height=75,
-              bg_color="#262626",text_font=Font_tuple, image=upload, compound='right')
+                text_color="white",
+                border_width=2,fg_color=None, hover_color="#D35B58",border_color="#D35B58",height=75,
+                bg_color="#262626",font=Font_tuple, image=upload, compound='right')
 submit.place(x=635, y=400)
 new.mainloop()
